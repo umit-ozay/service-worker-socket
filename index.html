@@ -9,7 +9,7 @@
 
 <body>
     <h1>WebSocket Bildirim Örneği</h1>
-    <iframe id="iframe" src="https://www.gucluhosting.org:7632/" style="width: 100%; height: 500px;"></iframe>
+    <iframe id="iframe" src="https://www.google.com" style="width: 100%; height: 100%;"></iframe>
 
     <script>
         var iframe = document.getElementById('iframe');
@@ -37,8 +37,6 @@
                 };
             }
         }
-
-        // Tarayıcı bildirim iznini iste
         if (Notification.permission !== 'granted') {
             Notification.requestPermission().then(function(permission) {
                 if (permission === 'granted') {
